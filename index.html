@@ -1,22 +1,192 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>EN.601.464/664 Artificial Intelligence</title>
-  <style>
-    body {
-      font-family: Arial, sans-serif;
-      text-align: center;
-      padding: 50px;
-      background-color: #f4f4f4;
-    }
-    h1 {
-      color: #333;
-    }
-  </style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>EN.601.464/664 Artificial Intelligence</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            color: #333;
+            background-color: #f4f4f4;
+            margin: 0;
+            padding: 0;
+        }
+
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+            background-color: #fff;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        header {
+            text-align: center;
+            padding: 30px 0;
+            background-color: #f8f8f8;
+            border-bottom: 1px solid #eaeaea;
+        }
+
+        h1 {
+            color: #333;
+            margin: 0;
+        }
+
+        h3 {
+            color: #2c3e50;
+            margin-top: 40px;
+            padding-bottom: 10px;
+            border-bottom: 1px solid #eee;
+        }
+
+        p {
+            text-align: left;
+            margin-bottom: 20px;
+        }
+
+        strong {
+            color: #2c3e50;
+        }
+
+        ul {
+            text-align: left;
+            padding-left: 20px;
+        }
+
+        li {
+            margin-bottom: 10px;
+        }
+
+        a {
+            color: #3498db;
+            text-decoration: none;
+            transition: color 0.3s;
+        }
+
+        a:hover {
+            color: #2980b9;
+            text-decoration: underline;
+        }
+
+        hr {
+            margin: 40px 0;
+            border: 0;
+            height: 1px;
+            background-color: #eaeaea;
+        }
+
+        .project {
+            margin-bottom: 40px;
+        }
+
+        .demo-link {
+            display: inline-block;
+            margin-top: 15px;
+            padding: 8px 15px;
+            background-color: #3498db;
+            color: white;
+            border-radius: 4px;
+            text-decoration: none;
+        }
+
+        .demo-link:hover {
+            background-color: #2980b9;
+            text-decoration: none;
+        }
+    </style>
 </head>
+
 <body>
-  <h1>EN.601.464/664 Artificial Intelligence</h1>
+    <header>
+        <h1>EN.601.464/664 Artificial Intelligence</h1>
+    </header>
+
+    <div class="container">
+        <div class="project">
+            <h3 id="1-classical-search-algorithms-explorer">1. Classical Search Algorithms Explorer</h3>
+            <p><strong>Description:</strong>
+                An interactive web application designed to help users explore and understand the concepts of classical
+                search algorithms: <strong>Breadth-First Search (BFS)</strong>, <strong>Depth-First Search
+                    (DFS)</strong>, and
+                <strong>A* Search Algorithm</strong>. The app provides visualizations and step-by-step explanations to
+                illustrate how each algorithm operates in different scenarios.
+            </p>
+            <p>
+                <a href="https://en-601-464-664-artificial-intelligence.github.io/classical_search/"
+                    class="demo-link">Explore the Classical Search Algorithms</a>
+            </p>
+        </div>
+
+        <hr>
+
+        <div class="project">
+            <h3 id="2-adversarial-search-game-simulator">2. Adversarial Search Game Simulator</h3>
+            <p><strong>Description:</strong>
+                An interactive web application that showcases adversarial search in action. In this grid-based game, two
+                robots compete:
+            </p>
+            <ul>
+                <li><strong>Good Robot (🤖):</strong> Uses the MINIMAX algorithm (with adjustable depth) to navigate
+                    toward
+                    a goal (❤️) while avoiding danger.</li>
+                <li><strong>Bad Robot (👾):</strong> Tries to intercept and zap the good robot using strategies ranging
+                    from
+                    random moves to MINIMAX with varying depths and different evaluation functions.</li>
+            </ul>
+            <p>Explore how different decision-making strategies play out in a competitive environment as each robot's
+                path
+                is visually tracked on the grid.</p>
+            <p>
+                <a href="https://en-601-464-664-artificial-intelligence.github.io/adversarial_search/"
+                    class="demo-link">Explore Adversarial Search</a>
+            </p>
+        </div>
+
+        <hr>
+
+        <div class="project">
+            <h3 id="3-perceptron-visualizer">3. Perceptron Visualizer</h3>
+            <p><strong>Description:</strong>
+                A dynamic, single-layer perceptron explorer that demonstrates how a single neuron can learn to
+                differentiate
+                between two classes. By adjusting the <strong>weights</strong> and <strong>bias</strong> interactively,
+                you
+                can see how the decision boundary changes in real-time. This tool also includes demos for basic boolean
+                logic
+                gates (AND, OR, NAND, NOR, XOR) and additional custom operations. It is a resource for visual learners
+                who wish to
+                understand perceptron fundamentals and the geometry behind linear separability.
+            </p>
+            <p>
+                <a href="https://en-601-464-664-artificial-intelligence.github.io/perceptron_visualization/"
+                    class="demo-link">Try the Perceptron Visualization</a>
+            </p>
+        </div>
+
+        <hr>
+
+        <div class="project">
+            <h3 id="4-genetic-algorithm-crossover--mutation-visualizer">4. Genetic Algorithm Crossover &amp; Mutation
+                Visualizer</h3>
+            <p><strong>Description:</strong>
+                An interactive web tool demonstrating genetic algorithm operations using a simplified <strong>Knapsack
+                    Problem</strong> scenario. Each item has a <strong>weight</strong> and <strong>value</strong>, and
+                the
+                <strong>genome</strong> (sequence of 0s and 1s) represents whether an item is picked or not. Users can
+                experiment with different <strong>crossover</strong> strategies (single-point, two-point, k-point, and
+                uniform) and <strong>mutation</strong> schemes (bit-flip, swap, and scramble) to see how new solutions
+                (offspring
+                genomes) are generated in genetic algorithms.
+            </p>
+            <p>
+                <a href="https://en-601-464-664-artificial-intelligence.github.io/genetic_algo_visualization/"
+                    class="demo-link">Explore the Genetic Algorithm Visualizer</a>
+            </p>
+        </div>
+    </div>
 </body>
+
 </html>
